@@ -1,0 +1,55 @@
+.roulette-table {
+    display: grid;
+    grid-template-columns: auto 1fr; /* First column for 0, second for main numbers */
+    gap: 2px; /* No gap between columns */
+    justify-content: center;
+  }
+  
+  .roulette-zero {
+    grid-row: span 3; /* Span across three rows */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 0.2rem;
+    width: 80px; /* Custom width for 0 */
+    height: 154px; /* Custom height for 0 */
+    box-sizing: border-box;
+  }
+  
+  .roulette-row {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 0.1rem; /* Minimal gap between columns */
+    row-gap: 0; /* No gap between rows */
+    text-align: center;
+  }
+  
+  .roulette-number {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    width: 50px; /* Width for other numbers */
+    height: 50px; /* Height for other numbers */
+    box-sizing: border-box;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
+  .black {
+    background-color: black;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
